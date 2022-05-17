@@ -1,0 +1,40 @@
+1) Tools for packages management
+command line:        dnf (like apt)
+					           rpm (like dpkg)
+graphical interface: dnfdragora (like synaptic)
+
+/END
+========================================================================
+
+2) dnfdragora is not starting
+
+normally this happens afer a system upgrade or after changing/visualizing
+"User preferences" or "Information" in dnfdragora
+
+rm /root/.config/dnfdragora.yaml
+killall dnfdragora-updater
+killall dnfdaemon-system
+dnfdragora-updater &
+
+/END
+========================================================================
+
+3) additional missing rpm packages from rpmsphere:
+https://rpmsphere.github.io/
+
+/END
+========================================================================
+
+4) improving gnome3 for non brain dead people
+
+dnf install -y gnome-extensions-app gnome-tweaks gnome-shell-extension-appindicator
+
+/END
+========================================================================
+
+5) activate/deactivate services
+
+ntsysv
+
+/END
+========================================================================
