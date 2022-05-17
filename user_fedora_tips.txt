@@ -1,0 +1,33 @@
+ixing screen resolution in Xfce
+
+edit this file and then make it read-only
+.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+
+from
+https://unix.stackexchange.com/questions/274506/how-to-set-persistent-resolution-in-xfce-on-debian
+
+/END
+================================================================================
+
+Always show text-entry location in Nautilus/Files
+
+The standard Files toolbar shows a button bar interface for path navigation. 
+To enter path locations using the keyboard, you must expose the location text-entry field. 
+This is done by pressing Ctrl+l
+
+To make the location text-entry field always present, use gsettings as shown below: 
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+
+Note: After changing this setting, you will not be able to expose the button bar. Only when the setting is false can both forms of location navigation be employed.
+
+from:
+https://wiki.archlinux.org/title/GNOME/Files
+/END
+================================================================================
+
+Change Xfce4 themes withouth experiencing disruption with GTK3
+
+dnf install xfce-theme-manager
+
+
+/END
